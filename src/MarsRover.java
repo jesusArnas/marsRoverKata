@@ -22,8 +22,13 @@ public class MarsRover {
         return this.y;
     }
 
-    public void ponerMovimiento(String ff) {
+    public void ponerMovimiento(String cadena) {
         this.x=this.x+2;
-
+        if (cadena.equals("l")){
+            this.direction = "w";
+        }
+        else {
+            this.direction = "e";
+        }
     }
 }
