@@ -18,4 +18,13 @@ public class MarsRoverTest {
         mr = new MarsRover(1,2,"S");
         assertEquals("S", mr.getDirection());
     }
+
+    @Test
+    public void pruebaPosicion(){
+        MarsRover mr = new MarsRover(1,2,"N");
+        assertEquals(1, mr.getX());
+        assertEquals(2, mr.getY());
+    }
+
+    
 }
