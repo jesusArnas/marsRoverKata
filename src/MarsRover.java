@@ -21,4 +21,9 @@ public class MarsRover {
     public int getY() {
         return this.y;
     }
+
+    public void ponerMovimiento(String ff) {
+        this.x=this.x+2;
+
+    }
 }

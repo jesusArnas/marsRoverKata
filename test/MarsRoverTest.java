@@ -26,5 +26,12 @@ public class MarsRoverTest {
         assertEquals(2, mr.getY());
     }
 
-    
+    @Test
+    public  void pruebaMovimiento(){
+        MarsRover mr= new MarsRover(0,0,"N");
+        mr.ponerMovimiento("ff");
+
+        assertEquals(2,mr.getX());
+        mr.ponerMovimiento("");
+    }
 }
